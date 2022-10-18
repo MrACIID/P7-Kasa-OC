@@ -1,11 +1,21 @@
 .navigation ul {
-  display: flex;
-  margin-left: 80%;
-  margin-top: 30px;
+  width: 300px;
+  float: right;
+  margin-top: -60px;
 }
 .navigation li {
-  padding-right: 20px;
+  display: inline;
+  color: #ff6060;
   font-size: 24px;
-  text-align: right;
+}
+
+.logoheader {
+  width: 240px;
+}
+
+//Underline pour navbar actif.
+.active {
+  text-decoration-line: underline;
+  text-decoration-thickness: 3px;
   color: #ff6060;
 }
