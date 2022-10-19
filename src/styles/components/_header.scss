@@ -1,6 +1,5 @@
 .navigation ul {
-  width: 300px;
-  float: right;
+  max-width: 300px;
   margin-top: -60px;
 }
 .navigation li {
@@ -9,8 +8,19 @@
   font-size: 24px;
 }
 
+.navigation {
+  display: flex;
+  flex-direction: row-reverse;
+}
+
+.header {
+  max-width: 1300px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
 .logoheader {
-  width: 240px;
+  max-width: 240px;
 }
 
 //Underline pour navbar actif.
