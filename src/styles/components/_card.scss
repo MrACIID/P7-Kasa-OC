@@ -5,14 +5,15 @@
 }
 
 .card img {
-  width: 100%;
-  height: 100%;
+  width: 340px;
+  height: 340px;
   border-radius: 10px;
   object-fit: cover;
 }
 
-.card h2 {
-  margin-left: -330px;
-  margin-top: 260px;
+.card p {
+  font-size: 18px;
+  margin-left: -340px;
+  margin-top: 300px;
   color: white;
 }

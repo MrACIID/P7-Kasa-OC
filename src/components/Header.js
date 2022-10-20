@@ -10,7 +10,6 @@ const Header = () => {
           <img src={logo} alt="logo kasa" />
         </Link>
       </div>
-
       <div className="navigation">
         <ul>
           <NavLink to="/" end>
