@@ -1,12 +1,13 @@
 import React from "react";
 import Header from "../components/Header";
 import Banner from "../components/Banner";
+import bannerimg from "../styles/assets/bannerabout.png";
 
 const About = () => {
   return (
     <div>
       <Header />
-      <Banner />
+      <Banner src={bannerimg} alt={"bannière montagnes enneigé"} text={""} />
       <h1>A propos</h1>
       <br />
       <p>
