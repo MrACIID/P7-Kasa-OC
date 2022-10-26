@@ -1,17 +1,17 @@
 {
   "files": {
     "main.css": "/P7-Kasa-OC/static/css/main.c33b00ce.css",
-    "main.js": "/P7-Kasa-OC/static/js/main.991aa4b7.js",
+    "main.js": "/P7-Kasa-OC/static/js/main.b2d7a18e.js",
     "static/media/bannerabout.png": "/P7-Kasa-OC/static/media/bannerabout.fce6fc3e9ed27433e9b0.png",
     "static/media/banner.png": "/P7-Kasa-OC/static/media/banner.efc1935eb81fc5e585f9.png",
     "static/media/Montserrat-Regular.ttf": "/P7-Kasa-OC/static/media/Montserrat-Regular.ceb11275ab638627a643.ttf",
     "index.html": "/P7-Kasa-OC/index.html",
     "static/media/dropdownarrow.svg": "/P7-Kasa-OC/static/media/dropdownarrow.557045ea3cccdf4a6a60a53481c321e2.svg",
     "main.c33b00ce.css.map": "/P7-Kasa-OC/static/css/main.c33b00ce.css.map",
-    "main.991aa4b7.js.map": "/P7-Kasa-OC/static/js/main.991aa4b7.js.map"
+    "main.b2d7a18e.js.map": "/P7-Kasa-OC/static/js/main.b2d7a18e.js.map"
   },
   "entrypoints": [
     "static/css/main.c33b00ce.css",
-    "static/js/main.991aa4b7.js"
+    "static/js/main.b2d7a18e.js"
   ]
 }
