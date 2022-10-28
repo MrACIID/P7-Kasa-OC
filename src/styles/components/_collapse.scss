@@ -8,6 +8,7 @@
 .btnc {
   background-color: #ff6060;
   text-align: left;
+  height: 47px;
   width: 100%;
   border-radius: 5px;
   border-style: none;
@@ -15,15 +16,17 @@
   color: white;
   font-size: 24px;
 }
-
+.txtbtn {
+  margin-top: 10px;
+}
 .arrowdown {
-  margin-top: -30px;
+  margin-top: -45px;
   transform: rotate(180deg);
   float: right;
 }
 .arrowup {
   float: right;
-  margin-top: -30px;
+  margin-top: -45px;
 }
 
 .content {
@@ -35,4 +38,7 @@
   color: #ff6060;
   font-size: 24px;
   border-radius: 5px;
+}
+.content p {
+  margin-left: 15px;
 }

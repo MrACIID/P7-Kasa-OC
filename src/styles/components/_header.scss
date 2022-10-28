@@ -1,8 +1,10 @@
 .navigation ul {
-  max-width: 300px;
-  margin-top: -60px;
+  margin-top: -40px;
+  text-align: center;
+  width: 320px;
 }
 .navigation li {
+  padding: 30px;
   display: inline;
   color: #ff6060;
   font-size: 24px;
@@ -14,13 +16,14 @@
 }
 
 .header {
-  max-width: 1300px;
+  max-width: 1240px;
   margin-left: auto;
   margin-right: auto;
 }
 
 .logoheader {
   max-width: 240px;
+  margin-top: 30px;
 }
 
 //Underline pour navbar actif.
