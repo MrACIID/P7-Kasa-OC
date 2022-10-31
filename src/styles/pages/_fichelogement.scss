@@ -10,11 +10,12 @@
 }
 .info h2 {
   font-size: 18px;
+  margin-top: -20px;
   max-width: 300px;
 }
 .info h3 {
   max-width: 100px;
-  margin-top: -100px;
+  margin-top: -70px;
   margin-right: 80px;
   font-weight: 500;
   font-size: 18px;
@@ -27,7 +28,26 @@
   height: 64px;
   border-radius: 40px;
   float: right;
-  margin-top: -110px;
+  margin-top: -80px;
+}
+
+.tags {
+  display: flex;
+  gap: 10px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 30px;
+  max-width: 1240px;
+}
+.tags li {
+  display: inline;
+  font-size: 14px;
+  color: white;
+  background-color: #ff6060;
+  border-radius: 10px;
+  padding: 5px;
+  padding-left: 20px;
+  padding-right: 20px;
 }
 
 .desc {

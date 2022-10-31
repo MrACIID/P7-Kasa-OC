@@ -4,11 +4,11 @@ import data from "../logements.json";
 import Header from "../components/Header";
 import Carousel from "../components/Carousel";
 import Collapse from "../components/Collapse";
+import Footer from "../components/Footer";
 
 const Fichelogement = ({ imgurl, text, content }) => {
   const params = useParams();
   const logementdata = data.find((logement) => logement.id === params.id);
-  console.log(logementdata);
 
   return (
     <div>
@@ -17,17 +17,30 @@ const Fichelogement = ({ imgurl, text, content }) => {
       <div className="info">
         <h1>{logementdata.title}</h1>
         <h2>{logementdata.location}</h2>
-        <h3>{logementdata.host.name}</h3>
-        <div className="blank"></div>
+        <div className="hostrate">
+          <h3>{logementdata.host.name}</h3>
+          <div className="blank"></div>
+        </div>
+      </div>
+      <div className="tags">
+        {logementdata.tags.map((tag, index) => (
+          <li key={index}>{tag}</li>
+        ))}
       </div>
       <div className="desc">
         <div className="description">
           <Collapse text="Description" content={logementdata.description} />
         </div>
         <div className="equipement">
-          <Collapse text="Equipements" content={logementdata.equipments} />
+          <Collapse
+            text="Equipements"
+            content={logementdata.equipments.map((equipment, index) => (
+              <li key={index}>{equipment}</li>
+            ))}
+          />
         </div>
       </div>
+      <Footer />
     </div>
   );
 };

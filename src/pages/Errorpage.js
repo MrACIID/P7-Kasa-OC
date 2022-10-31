@@ -1,6 +1,7 @@
 import React from "react";
 import Header from "../components/Header";
 import { Link } from "react-router-dom";
+import Footer from "../components/Footer";
 
 const Errorpage = () => {
   return (
@@ -14,6 +15,7 @@ const Errorpage = () => {
           <h3>Retourner sur la page d'accueil</h3>
         </Link>
       </div>
+      <Footer />
     </div>
   );
 };
