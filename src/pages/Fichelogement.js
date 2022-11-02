@@ -1,6 +1,7 @@
 import React from "react";
 import { useParams } from "react-router-dom";
 import data from "../logements.json";
+import star from "../styles/assets/star.svg";
 import Header from "../components/Header";
 import Carousel from "../components/Carousel";
 import Collapse from "../components/Collapse";
@@ -17,9 +18,13 @@ const Fichelogement = ({ imgurl, text, content }) => {
       <div className="info">
         <h1>{logementdata.title}</h1>
         <h2>{logementdata.location}</h2>
-        <div className="hostrate">
+        <div className="host">
           <h3>{logementdata.host.name}</h3>
           <div className="blank"></div>
+        </div>
+        <div className="rating">
+          <img className="fullstar" src={star} alt="étoile pleine" />
+          <img className="emptystar" src={star} alt="étoile vide" />
         </div>
       </div>
       <div className="tags">

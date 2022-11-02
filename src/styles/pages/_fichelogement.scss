@@ -2,6 +2,7 @@
   color: #ff6060;
   margin-left: auto;
   margin-right: auto;
+  overflow: auto;
   max-width: 1240px;
 }
 .info h1 {
@@ -31,12 +32,22 @@
   margin-top: -80px;
 }
 
+.rating {
+  display: flex;
+  gap: 5px;
+  float: right;
+}
+
+.emptystar {
+  filter: contrast(0%);
+}
+
 .tags {
   display: flex;
   gap: 10px;
   margin-left: auto;
   margin-right: auto;
-  margin-top: 30px;
+  margin-top: -20px;
   max-width: 1240px;
 }
 .tags li {
@@ -52,7 +63,7 @@
 
 .desc {
   display: flex;
-  margin-top: 60px;
+  margin-top: 10px;
   gap: 60px;
   flex-direction: center;
   max-width: 1240px;

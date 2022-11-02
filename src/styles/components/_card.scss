@@ -15,9 +15,16 @@
   font-size: 18px;
   margin-left: -320px;
   margin-top: 290px;
+  text-shadow: rgb(0, 0, 0) 1px 0 10px;
   text-align: left;
   color: white;
 }
+
 .card a {
   display: contents;
+}
+
+.card:hover img {
+  transition: 100ms;
+  box-shadow: 0px 0px 10px #ff6060;
 }
