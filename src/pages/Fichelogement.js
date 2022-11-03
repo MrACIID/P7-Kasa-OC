@@ -14,7 +14,7 @@ const Fichelogement = ({ imgurl, text, content }) => {
   return (
     <div>
       <Header />
-      <Carousel imgurl={logementdata.pictures[1]} />
+      <Carousel imgurl={logementdata.pictures} />
       <div className="info">
         <h1>{logementdata.title}</h1>
         <h2>{logementdata.location}</h2>
