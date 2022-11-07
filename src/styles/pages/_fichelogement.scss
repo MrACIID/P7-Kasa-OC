@@ -23,8 +23,8 @@
   text-align: right;
   float: right;
 }
-.blank {
-  background-color: #c4c4c4;
+.hostphoto img {
+  object-fit: cover;
   width: 64px;
   height: 64px;
   border-radius: 40px;

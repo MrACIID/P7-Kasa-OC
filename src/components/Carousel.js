@@ -23,7 +23,10 @@ const Carousel = ({ imgurl }) => {
         className="imgcarou"
         style={{ backgroundImage: `url(${imgurl[currentIndex]})` }}
       >
-        <div className="arrowcontainer">
+        <div
+          className="arrowcontainer"
+          style={imgurl.length === 1 ? { visibility: "hidden" } : {}}
+        >
           <div className="arrowleft" onClick={goToPrevious}>
             <img src={arrow} alt="fléche gauche" />
           </div>
@@ -31,6 +34,9 @@ const Carousel = ({ imgurl }) => {
             <img src={arrow} alt="fléche droite" />
           </div>
         </div>
+        <p className="photocounter">
+          {currentIndex + 1}/{imgurl.length}
+        </p>
       </div>
     </div>
   );

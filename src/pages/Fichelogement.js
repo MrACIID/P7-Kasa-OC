@@ -20,7 +20,9 @@ const Fichelogement = ({ imgurl, text, content }) => {
         <h2>{logementdata.location}</h2>
         <div className="host">
           <h3>{logementdata.host.name}</h3>
-          <div className="blank"></div>
+          <div className="hostphoto">
+            <img src={logementdata.host.picture} alt="L'host" />
+          </div>
         </div>
         <div className="rating">
           <img className="fullstar" src={star} alt="étoile pleine" />
