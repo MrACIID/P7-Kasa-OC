@@ -25,19 +25,29 @@
   padding-top: 170px;
 }
 
-.arrowleft img {
+.arrowleft img,
+.arrowright img {
   cursor: pointer;
   filter: drop-shadow(0 0 0.75rem rgb(0, 0, 0));
 }
 
 .arrowright img {
-  cursor: pointer;
   transform: rotate(180deg);
-  filter: drop-shadow(0 0 0.75rem rgb(0, 0, 0));
 }
 
 .photocounter {
   margin-top: 130px;
   color: white;
   text-align: center;
+}
+
+@media only screen and (max-width: 750px) {
+  .arrowleft img,
+  .arrowright img {
+    width: 50px;
+    height: 50px;
+  }
+  .arrowcontainer {
+    padding-top: 190px;
+  }
 }

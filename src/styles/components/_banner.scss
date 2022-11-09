@@ -26,3 +26,18 @@
   font-size: 48px;
   font-weight: lighter;
 }
+
+@media only screen and (max-width: 640px) {
+  .banner h1 {
+    text-align: left;
+    margin-left: 10px;
+  }
+}
+
+@media only screen and (max-width: 460px) {
+  .banner h1 {
+    font-size: 30px;
+    width: 270px;
+    margin-top: -150px;
+  }
+}

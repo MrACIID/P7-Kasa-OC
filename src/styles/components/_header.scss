@@ -1,7 +1,7 @@
 .navigation ul {
   margin-top: -40px;
   text-align: center;
-  width: 320px;
+  max-width: 320px;
 }
 .navigation li {
   padding: 30px;
@@ -31,4 +31,23 @@
   text-decoration-line: underline;
   text-decoration-thickness: 3px;
   color: #ff6060;
+}
+
+@media only screen and (max-width: 555px) {
+  .navigation li {
+    padding: 10px;
+  }
+  .logoheader img {
+    width: 150px;
+  }
+}
+
+@media only screen and (max-width: 430px) {
+  .navigation li {
+    font-size: 15px;
+    padding: 5px;
+  }
+  .navigation {
+    margin-top: 10px;
+  }
 }

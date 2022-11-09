@@ -11,10 +11,11 @@
 }
 .info h2 {
   font-size: 18px;
-  margin-top: -20px;
+  margin-top: 0px;
   max-width: 300px;
 }
-.info h3 {
+.host h3 {
+  color: #ff6060;
   max-width: 100px;
   margin-top: -70px;
   margin-right: 80px;
@@ -25,23 +26,22 @@
 }
 .hostphoto img {
   object-fit: cover;
-  width: 64px;
-  height: 64px;
+  max-width: 64px;
+  max-height: 64px;
   border-radius: 40px;
   float: right;
   margin-top: -80px;
 }
 
-.rating {
+.emptystar {
+  filter: grayscale(100%);
+  opacity: 0.5;
+}
+.ratediv {
   display: flex;
   gap: 5px;
   float: right;
 }
-
-.emptystar {
-  filter: contrast(0%);
-}
-
 .tags {
   display: flex;
   gap: 10px;
@@ -75,4 +75,43 @@
 }
 .description {
   width: 100%;
+}
+
+@media only screen and (max-width: 750px) {
+  .desc {
+    flex-direction: column;
+    gap: 10px;
+    margin-top: 80px;
+  }
+  .host {
+    margin-top: 140px;
+    float: right;
+  }
+  .ratediv {
+    margin-top: 80px;
+    float: left;
+  }
+
+  .tags {
+    margin-top: -125px;
+  }
+}
+
+@media only screen and (max-width: 470px) {
+  .info h1 {
+    font-size: 25px;
+  }
+  .tags li {
+    font-size: 7px;
+  }
+  .emptystar,
+  .fullstar {
+    width: 20px;
+  }
+  .hostphoto img {
+    width: 50px;
+  }
+  .host h3 {
+    margin-right: 60px;
+  }
 }

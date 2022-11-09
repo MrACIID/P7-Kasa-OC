@@ -1,7 +1,7 @@
 .gallery ul {
   display: flex;
   justify-content: center;
-  margin-left: -60px;
+  margin-left: -43px;
   flex-direction: row;
   flex-wrap: wrap;
   gap: 30px;
@@ -11,9 +11,15 @@
   background-color: #f7f7f7;
   padding-bottom: 30px;
   padding-top: 30px;
-  margin-top: 90px;
+  margin-top: 40px;
   border-radius: 25px;
   max-width: 1250px;
   margin-left: auto;
   margin-right: auto;
+}
+
+@media only screen and (max-width: 380px) {
+  .gallery ul {
+    margin-left: -25px;
+  }
 }

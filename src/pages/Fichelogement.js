@@ -1,13 +1,13 @@
 import React from "react";
 import { useParams } from "react-router-dom";
 import data from "../logements.json";
-import star from "../styles/assets/star.svg";
 import Header from "../components/Header";
 import Carousel from "../components/Carousel";
 import Collapse from "../components/Collapse";
 import Footer from "../components/Footer";
+import Stars from "../components/Stars";
 
-const Fichelogement = ({ imgurl, text, content }) => {
+const Fichelogement = ({ imgurl, text, content, nstar }) => {
   const params = useParams();
   const logementdata = data.find((logement) => logement.id === params.id);
 
@@ -25,8 +25,7 @@ const Fichelogement = ({ imgurl, text, content }) => {
           </div>
         </div>
         <div className="rating">
-          <img className="fullstar" src={star} alt="étoile pleine" />
-          <img className="emptystar" src={star} alt="étoile vide" />
+          <Stars nstar={logementdata.rating} />
         </div>
       </div>
       <div className="tags">
