@@ -6,10 +6,12 @@ import Carousel from "../components/Carousel";
 import Collapse from "../components/Collapse";
 import Footer from "../components/Footer";
 import Stars from "../components/Stars";
+import Errorpage from "./Errorpage";
 
 const Fichelogement = ({ imgurl, text, content, nstar }) => {
   const params = useParams();
   const logementdata = data.find((logement) => logement.id === params.id);
+  if (!logementdata) return <Errorpage />;
 
   return (
     <div>
