@@ -8,11 +8,10 @@ import Footer from "../components/Footer";
 import Stars from "../components/Stars";
 import Errorpage from "./Errorpage";
 
-const Fichelogement = ({ imgurl, text, content, nstar }) => {
-
+const Fichelogement = () => {
   //Useparams pour récupèrer l'id de la propriété dans l'url.
   const params = useParams();
-  
+
   //Recherche de la propriété dans notre DATA en utilisant l'id récupérer dans l'url.
   const logementdata = data.find((logement) => logement.id === params.id);
 
